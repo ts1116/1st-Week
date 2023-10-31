@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         this.binding.button01.setOnClickListener {
             val intent = Intent(this, SubActivity::class.java)
             startActivity(intent)
-            // 왼쪽으로 액티비티가 사라지는 애니메이션 설정
+            // 오른쪽으로 액티비티가 사라지는 애니메이션 설정
             overridePendingTransition(R.anim.slide_right_enter, R.anim.slide_right_exit)
         }
 
